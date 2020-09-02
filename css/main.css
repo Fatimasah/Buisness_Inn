@@ -1,0 +1,300 @@
+/* start general style */
+:root {
+  --redColor: #A50454;
+  --whiteColor: #ffffff;
+  --blackColor: #000000;
+  --goldColor: #E2AE19;
+  --grayColor: #868686;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "latoM";
+  src: url("../fonts/Lato-Medium.ttf");
+}
+
+@font-face {
+  font-family: "latoB";
+  src: url("../fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+
+.header-section .navbar .navbar-nav .nav-item .nav-link:focus, .header-section .navbar .navbar-nav .nav-item .nav-link:hover, .header-section .navbar .form-inline .btn:hover svg {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: unset !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  direction: ltr;
+  text-align: left;
+}
+
+body a,
+body a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+body input:focus, body input:hover,
+body .btn:focus,
+body .btn:hover {
+  outline: unset !important;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+  background-color: unset !important;
+  color: unset !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+body button:focus,
+body button:active {
+  outline: none;
+  outline-offset: unset;
+}
+
+body .btn-primary {
+  border-color: unset;
+  background-color: unset;
+}
+
+.see-more {
+  color: var(--redColor);
+  font-family: 'latoB';
+  font-size: 16px;
+}
+
+.black-header {
+  height: 59px;
+  background-color: var(--blackColor);
+}
+
+.header-section {
+  background-color: var(--whiteColor);
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+}
+
+.header-section .navbar .navbar-brand img {
+  max-width: 100%;
+  width: 107px;
+}
+
+.header-section .navbar .navbar-nav .nav-item .nav-link {
+  color: var(--grayColor);
+  padding: 15px 20px;
+  font: 14px/17px "lato";
+}
+
+.header-section .navbar .navbar-nav .nav-item .nav-link:focus, .header-section .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--redColor);
+}
+
+.header-section .navbar .form-inline {
+  position: relative;
+}
+
+.header-section .navbar .form-inline .form-control {
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 3px;
+  height: 40px;
+  border: none;
+  width: 260px;
+}
+
+.header-section .navbar .form-inline .form-control::-webkit-input-placeholder {
+  color: var(--goldColor);
+  font: 14px/19px 'Roboto';
+}
+
+.header-section .navbar .form-inline .form-control:-ms-input-placeholder {
+  color: var(--goldColor);
+  font: 14px/19px 'Roboto';
+}
+
+.header-section .navbar .form-inline .form-control::-ms-input-placeholder {
+  color: var(--goldColor);
+  font: 14px/19px 'Roboto';
+}
+
+.header-section .navbar .form-inline .form-control::placeholder {
+  color: var(--goldColor);
+  font: 14px/19px 'Roboto';
+}
+
+.header-section .navbar .form-inline .btn {
+  position: absolute;
+  right: 0;
+  border: none;
+  padding: 10px 20px;
+  color: var(--goldColor);
+}
+
+.header-section .navbar .form-inline .btn svg {
+  font-size: 17px;
+}
+
+.header-section .navbar .form-inline .btn:hover svg {
+  color: var(--redColor);
+}
+
+.portfolio-section .item {
+  margin: 80px 0;
+}
+
+.portfolio-section .item:nth-of-type(odd) .row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.portfolio-section .item:nth-of-type(odd) .row .post-content {
+  padding-left: 18%;
+  padding-right: 85px;
+}
+
+@media (max-width: 992px) {
+  .portfolio-section .item:nth-of-type(odd) .row .post-content {
+    padding-left: 5%;
+    padding-right: 0;
+  }
+}
+
+.portfolio-section .item:nth-of-type(even) .row .post-content {
+  padding-right: 19%;
+  padding-left: 115px;
+}
+
+@media (max-width: 992px) {
+  .portfolio-section .item:nth-of-type(even) .row .post-content {
+    padding-right: 0;
+    padding-left: 35px;
+  }
+}
+
+.portfolio-section .item .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.portfolio-section .item .post-img {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .portfolio-section .item .post-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.portfolio-section .item .post-img img {
+  max-width: 100%;
+}
+
+.portfolio-section .item .post-content {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .portfolio-section .item .post-content {
+    width: 100%;
+    text-align: center;
+    padding: 10px !important;
+  }
+}
+
+.portfolio-section .item .post-content .post-title {
+  font-size: 30px;
+  font-family: 'lato';
+  color: var(--goldColor);
+  margin-bottom: 40px;
+}
+
+.portfolio-section .item .post-content .post-excerpt {
+  color: var(--blackColor);
+  font-family: 'latoM';
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.services-section {
+  background-color: #D4D4D4;
+  padding-top: 30px;
+  padding-bottom: 120px;
+  height: 315px;
+}
+
+.services-section .section-title {
+  color: var(--goldColor);
+  font-family: 'latoM';
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.services-section .details .section-info {
+  color: var(--whiteColor);
+  font-size: 16px;
+  font-family: 'latoM';
+  margin-bottom: 15px;
+}
+
+.services-section .cards-row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services-section .cards-row .service-card {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.services-section .cards-row .service-card h4 {
+  position: absolute;
+  width: 100%;
+  font-size: 16px;
+  font-family: 'latoM';
+  color: var(--whiteColor);
+  background-color: var(--goldColor);
+  padding: 15px 0;
+  text-align: center;
+  bottom: 0;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=main.css.map */
