@@ -8,6 +8,8 @@
     <!-- css links -->
     <link rel="stylesheet" href="css/assets/bootstrap.min.css">
     <link rel="stylesheet" href="css/assets/all.min.css">
+    <link rel="stylesheet" href="css/assets/jquery.flipster.nav.css">
+    <link rel="stylesheet" href="css/assets/jquery.flipster.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -16,8 +18,10 @@
     <!-- section header start -->
     <section class="header-section">
         <div class="container">
+
             <!-- <div class="row"> -->
-            <nav class="navbar navbar-expand-lg navbar-light ">
+            <nav class="navbar navbar-expand-lg navbar-light " id="navbar">
+                <!-- <div class="container"> -->
                 <a class="navbar-brand" href="#">
                     <img src="imgs/logo.png" alt="logo" loading="lazy">
                 </a>
@@ -45,10 +49,11 @@
 
                     </ul>
                     <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+                        <input class="form-control" type="text" placeholder="Search..." aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
+                <!-- </div> -->
             </nav>
             <!-- </div> -->
         </div>
@@ -65,24 +70,27 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <img src="imgs/slider/slider1.png" class="d-block w-100" alt="slider img">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h5 class="post-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h5>
+                        <p class="post-excerpt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                        <a href="">JOIN NOW</a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <img src="imgs/slider/slider1.png" class="d-block w-100" alt="slider img">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h5 class="post-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h5>
+                        <p class="post-excerpt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                        <a href="">JOIN NOW</a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <img src="imgs/slider/slider1.png" class="d-block w-100" alt="slider img">
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h5 class="post-title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</h5>
+                        <p class="post-excerpt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy</p>
+                        <a href="">JOIN NOW</a>
                     </div>
                 </div>
             </div>
@@ -99,7 +107,95 @@
     <!-- slider-section end -->
 
     <!-- testimonial-section start -->
-    <section class="testimonial-section"></section>
+    <section class="testimonial-section">
+        <div class="container">
+            <h2 class="section-title">Customer reviews</h2>
+            <div class="col-lg-10 col-12 m-auto">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 px-lg-0 ">
+                        <div class="client-card">
+                            <img src="imgs/clients/client1.png" alt="" class="client-img">
+                            <div class="reviews">
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                            </div>
+                            <h5 class="client-name">Name</h5>
+                            <p class="clientreview">Text of rating, lorim ipsum</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 px-lg-0 ">
+                        <div class="client-card">
+                            <img src="imgs/clients/client2.png" alt="" class="client-img">
+                            <div class="reviews">
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class=""><i class="far fa-star"></i></span>
+                            </div>
+                            <h5 class="client-name">Name</h5>
+                            <p class="clientreview">Text of rating, lorim ipsum</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 px-lg-0 ">
+                        <div class="client-card">
+                            <img src="imgs/clients/client3.png" alt="" class="client-img">
+                            <div class="reviews">
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class=""><i class="far fa-star"></i></span>
+                            </div>
+                            <h5 class="client-name">Name</h5>
+                            <p class="clientreview">Text of rating, lorim ipsum</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 px-lg-0 ">
+                        <div class="client-card">
+                            <img src="imgs/clients/client4.png" alt="" class="client-img">
+                            <div class="reviews">
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                            </div>
+                            <h5 class="client-name">Name</h5>
+                            <p class="clientreview">Text of rating, lorim ipsum</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 px-lg-0 ">
+                        <div class="client-card">
+                            <img src="imgs/clients/client5.png" alt="" class="client-img">
+                            <div class="reviews">
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                                <span class="checked"><i class="far fa-star"></i></span>
+                            </div>
+                            <h5 class="client-name">Name</h5>
+                            <p class="clientreview">Text of rating, lorim ipsum</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="review-now">
+                        <p>Have your tride our service? So come on say a word</p>
+                        <a href="">Right a review</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!-- testimonial-section end -->
 
     <!-- portfolio-section start -->
@@ -198,7 +294,7 @@
                 Services
             </h2>
             <div class="row">
-                <div class="col-lg-6 col-md-10 m-auto">
+                <div class="col-lg-7 col-md-10 m-auto">
                     <div class="details text-center">
                         <p class="section-info text-center">During your lunch break, visit MTS café and enjoy a wide selection of freshly prepared food and beverages or challenge your colleagues to a quick game of PlayStation, billiards, or table football</p>
                         <a href="html/private standard office.html" class="see-more">See more</a>
@@ -228,16 +324,111 @@
     </section>
     <!-- services-section end -->
 
+    <!-- spaces-section start -->
+    <section class="spaces-section">
 
+        <div id="Main-Content">
+            <div class="">
+                <div class="container">
+                    <h2 class="section-title text-center">Best spaces, multi choices</h2>
+                </div>
+                <!-- Flipster List -->
+                <div class="flipster">
+                    <ul class="flip-items">
+                        <li id="Coverflow-1" title="Cricket" data-flip-category="Fun Sports">
+                            <img src="imgs/portfolio/p1.png">
+                            <div class="space-details">
+                                <h5 class="space-name">Meeting Room</h5>
+                                <p class="space-area">Space: 75 m2</p>
+                                <p class="space-time">Open at: 07:00am Close at: 07:00pm</p>
+                                <a href="html/Meeting Room.html">View space</a>
+                            </div>
+                        </li>
+                        <li id="Coverflow-2" title="Surfing" data-flip-category="Fun Sports">
+                            <img src="imgs/portfolio/p2.png">
+                            <div class="space-details">
+                                <h5 class="space-name">Meeting Room</h5>
+                                <p class="space-area">Space: 75 m2</p>
+                                <p class="space-time">Open at: 07:00am Close at: 07:00pm</p>
+                                <a href="html/Meeting Room.html">View space</a>
+                            </div>
+                        </li>
+                        <li id="Coverflow-3" title="Baseball" data-flip-category="Boring Sports">
+                            <img src="imgs/portfolio/p3.png">
+                            <div class="space-details">
+                                <h5 class="space-name">Meeting Room</h5>
+                                <p class="space-area">Space: 75 m2</p>
+                                <p class="space-time">Open at: 07:00am Close at: 07:00pm</p>
+                                <a href="html/Meeting Room.html">View space</a>
+                            </div>
+                        </li>
+                        <li id="Coverflow-4" title="Running" data-flip-category="Boring Sports">
+                            <img src="imgs/portfolio/p4.png">
+                            <div class="space-details">
+                                <h5 class="space-name">Meeting Room</h5>
+                                <p class="space-area">Space: 75 m2</p>
+                                <p class="space-time">Open at: 07:00am Close at: 07:00pm</p>
+                                <a href="html/Meeting Room.html">View space</a>
+                            </div>
+                        </li>
+                        <li id="Coverflow-7" title="Air Kicking" data-flip-category="These are Sports?">
+                            <img src="img/Sport-7.jpeg">
+                            <div class="space-details">
+                                <h5 class="space-name">Meeting Room</h5>
+                                <p class="space-area">Space: 75 m2</p>
+                                <p class="space-time">Open at: 07:00am Close at: 07:00pm</p>
+                                <a href="html/Meeting Room.html">View space</a>
+                            </div>
+                        </li>
+                        <li id="Coverflow-5" title="Bike Sitting" data-flip-category="These are Sports?">
+                            <img src="img/Sport-5.jpeg">
+                            <div class="space-details">
+                                <h5 class="space-name">Meeting Room</h5>
+                                <p class="space-area">Space: 75 m2</p>
+                                <p class="space-time">Open at: 07:00am Close at: 07:00pm</p>
+                                <a href="html/Meeting Room.html">View space</a>
+                            </div>
+                        </li>
+                        <li id="Coverflow-6" title="Extreme Bike Sitting" data-flip-category="These are Sports?">
+                            <img src="img/Sport-6.jpeg">
+                            <div class="space-details">
+                                <h5 class="space-name">Meeting Room</h5>
+                                <p class="space-area">Space: 75 m2</p>
+                                <p class="space-time">Open at: 07:00am Close at: 07:00pm</p>
+                                <a href="html/Meeting Room.html">View space</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Flipster List -->
+
+            </div>
+        </div>
+    </section>
+    <!-- spaces-section end -->
+
+    <!-- footer-section start -->
+    <footer>
+        <div class="container">
+            <p class="copy-right">All rights reserved. the buisness inn company © 2020</p>
+            <div class="privacy">
+                <a href="html/Term of service.html">Term of service</a>
+                <a href="html/Privacy Policy.html">Privacy Policy</a>
+            </div>
+    </footer>
+    <!-- footer-section end -->
 
     <!-- js scripts -->
     <script src="js/assets/jquery-3.5.1.min.js"></script>
     <script src="js/assets/popper.min.js"></script>
     <script src="js/assets/bootstrap.min.js"></script>
     <script src="js/assets/all.min.js"></script>
+    <script src="js/assets/jquery.flipster.min.js"></script>
     <script src="js/main.js"></script>
 
 
 </body>
+
+</html>
 
 </html>
