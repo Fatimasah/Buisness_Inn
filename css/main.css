@@ -895,6 +895,13 @@ footer .row a:hover {
 
 #joinNow-modal .modal-dialog {
   max-width: 85%;
+  margin: auto;
+}
+
+@media (max-width: 767px) {
+  #joinNow-modal .modal-dialog {
+    max-width: 90%;
+  }
 }
 
 #joinNow-modal .modal-dialog .contact-section {
@@ -903,6 +910,19 @@ footer .row a:hover {
 
 .main-section {
   padding: 100px 15%;
+}
+
+@media (max-width: 767px) {
+  .main-section {
+    padding: 50px 5%;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-section {
+    padding: 30px 0;
+    text-align: center;
+  }
 }
 
 .main-section .section-title {
@@ -916,6 +936,11 @@ footer .row a:hover {
   margin-top: 80px;
   font: bold 22px/30px 'Bhnschrift';
   color: var(--redColor);
+}
+
+.main-section h4 span {
+  font: 600 22px/30px 'Bhnschrift';
+  color: var(--blackColor);
 }
 
 .main-section p {

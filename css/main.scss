@@ -766,6 +766,10 @@
         #joinNow-modal {
             .modal-dialog {
                 max-width: 85%;
+                margin: auto;
+                @media(max-width: 767px) {
+                    max-width: 90%;
+                }
                 .contact-section {
                     padding: 70px 0;
                 }
@@ -775,6 +779,13 @@
         //============Term of service ==================
         .main-section {
             padding: 100px 15%;
+            @media(max-width: 767px) {
+                padding: 50px 5%;
+            }
+            @media(max-width: 576px) {
+                padding: 30px 0;
+                text-align: center;
+            }
             .section-title {
                 font-family: 'latoM';
                 font: 40px'latoM';
@@ -785,6 +796,10 @@
                 margin-top: 80px;
                 font: bold 22px/30px 'Bhnschrift';
                 color: var(--redColor);
+                span {
+                    font: 600 22px/30px 'Bhnschrift';
+                    color: var(--blackColor);
+                }
             }
             p {
                 font: 16px/25px 'Bhnschrift';
