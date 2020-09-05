@@ -110,7 +110,7 @@
     <!-- testimonial-section start -->
     <section class="testimonial-section">
         <div class="container">
-            <h2 class="section-title">Customer reviews</h2>
+            <h2 class="section-title text-center">Customer reviews</h2>
             <div class="col-lg-10 col-12 m-auto">
                 <div class="row">
                     <div class="col-lg-2 col-md-4 px-lg-0 ">
@@ -189,7 +189,7 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="review-now">
                         <p>Have your tride our service? So come on say a word</p>
-                        <a href="">Right a review</a>
+                        <a href="" data-toggle="modal" data-target="#rating-modal">Right a review</a>
                     </div>
 
                 </div>
@@ -604,6 +604,42 @@
                                         <button type="submit" class="btn join-btn">Send</button>
                                     </form>
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </scetion>
+            </div>
+        </div>
+    </div>
+    <!-- raing modal -->
+    <div class="modal fade" id="rating-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <scetion class="contact-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-md-8">
+                                <div class="contact-form">
+                                    <div class="reviews">
+                                        <span class="checked"><i class="far fa-star"></i></span>
+                                        <span class="checked"><i class="far fa-star"></i></span>
+                                        <span class="checked"><i class="far fa-star"></i></span>
+                                        <span class="checked"><i class="far fa-star"></i></span>
+                                        <span class=""><i class="far fa-star"></i></span>
+                                    </div>
+                                    <form>
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-mail">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control" id="phone" aria-describedby="emailHelp" placeholder="Phone">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea name="text-review" id="text-review" cols="30" rows="10" placeholder="Your review"></textarea>
+                                        </div>
+                                        <button type="submit" class="btn join-btn">Send</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
