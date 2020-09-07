@@ -38,6 +38,11 @@
             src: url("../fonts/BAHNSCHRIFT\ 1.TTF");
         }
         
+        @font-face {
+            font-family: "Ebrima";
+            src: url("../fonts/ebrima.ttf");
+        }
+        
         %trans {
             -webkit-transition: all 0.3s ease-in-out;
             -moz-transition: all 0.3s ease-in-out;

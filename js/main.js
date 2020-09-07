@@ -7,14 +7,11 @@ $("document").ready(function($) {
         });
 
     });
-    // navbar change background
-    // var nav = $('#navbar');
-    // $(window).scroll(function() {
 
-    //     if ($(this).scrollTop() > 0) {
-    //         nav.addClass("sticky");
-    //     } else {
-    //         nav.removeClass("sticky");
-    //     }
-    // });
+    $('.blog-posts .see-more').click(function() {
+        $('.blog-posts .hidden-row').slideDown(400);
+        $(this).hide();
+    });
+
+
 })
