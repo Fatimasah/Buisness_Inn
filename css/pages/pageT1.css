@@ -37,7 +37,7 @@
   src: url("../fonts/BAHNSCHRIFT 1.TTF");
 }
 
-.join-btn, .join-btn:hover, form .btn, form .btn:hover {
+.join-btn, .join-btn:hover, form .btn, form .btn:hover, .form-inline .btn svg, .form-inline .btn:hover svg {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -88,9 +88,13 @@ body .btn-primary {
 }
 
 .see-more {
-  color: var(--redColor);
+  color: var(--redColor) !important;
   font-family: 'latoB';
   font-size: 16px;
+}
+
+.see-more:hover {
+  color: var(--goldColor) !important;
 }
 
 .section-title {
@@ -122,28 +126,33 @@ body .btn-primary {
   }
 }
 
-form .form-group input {
+form .form-group input,
+form .form-group textarea {
   border: 0.2px solid #a5045459;
   padding: 15px;
   height: 50px;
 }
 
-form .form-group input::-webkit-input-placeholder {
+form .form-group input::-webkit-input-placeholder,
+form .form-group textarea::-webkit-input-placeholder {
   font: 14px 'lato';
   color: var(--grayColor);
 }
 
-form .form-group input:-ms-input-placeholder {
+form .form-group input:-ms-input-placeholder,
+form .form-group textarea:-ms-input-placeholder {
   font: 14px 'lato';
   color: var(--grayColor);
 }
 
-form .form-group input::-ms-input-placeholder {
+form .form-group input::-ms-input-placeholder,
+form .form-group textarea::-ms-input-placeholder {
   font: 14px 'lato';
   color: var(--grayColor);
 }
 
-form .form-group input::placeholder {
+form .form-group input::placeholder,
+form .form-group textarea::placeholder {
   font: 14px 'lato';
   color: var(--grayColor);
 }
@@ -165,6 +174,91 @@ form .btn {
 form .btn:hover {
   color: var(--whiteColor) !important;
   background-color: var(--redColor) !important;
+}
+
+.form-inline {
+  position: relative;
+}
+
+.form-inline .form-control {
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 3px;
+  height: 40px;
+  border: none;
+  width: 260px;
+}
+
+.form-inline .form-control::-webkit-input-placeholder {
+  color: var(--goldColor);
+  font: 14px/19px 'Roboto';
+}
+
+.form-inline .form-control:-ms-input-placeholder {
+  color: var(--goldColor);
+  font: 14px/19px 'Roboto';
+}
+
+.form-inline .form-control::-ms-input-placeholder {
+  color: var(--goldColor);
+  font: 14px/19px 'Roboto';
+}
+
+.form-inline .form-control::placeholder {
+  color: var(--goldColor);
+  font: 14px/19px 'Roboto';
+}
+
+.form-inline .btn {
+  margin-left: -55px;
+  border: none;
+  padding: 10px 20px;
+  color: var(--goldColor);
+  width: unset;
+  background: unset !important;
+  height: unset;
+  display: unset;
+}
+
+.form-inline .btn svg {
+  font-size: 17px;
+}
+
+.form-inline .btn:hover svg {
+  color: var(--redColor);
+}
+
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.reviews span {
+  background: var(--grayColor);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5px;
+}
+
+.reviews span.checked {
+  background: var(--goldColor);
+}
+
+.reviews span svg {
+  color: white;
+  border-radius: 50%;
+  font-size: 15px;
 }
 
 .black-header {

@@ -37,7 +37,7 @@
   src: url("../fonts/BAHNSCHRIFT 1.TTF");
 }
 
-.join-btn, .join-btn:hover, form .btn, form .btn:hover {
+.join-btn, .join-btn:hover, form .btn, form .btn:hover, .form-inline .btn svg, .form-inline .btn:hover svg {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -88,9 +88,13 @@ body .btn-primary {
 }
 
 .see-more {
-  color: var(--redColor);
+  color: var(--redColor) !important;
   font-family: 'latoB';
   font-size: 16px;
+}
+
+.see-more:hover {
+  color: var(--goldColor) !important;
 }
 
 .section-title {
@@ -167,6 +171,58 @@ form .btn:hover {
   background-color: var(--redColor) !important;
 }
 
+.form-inline {
+  position: relative;
+}
+
+.form-inline .form-control {
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 3px;
+  height: 40px;
+  border: none;
+  width: 260px;
+}
+
+.form-inline .form-control::-webkit-input-placeholder {
+  color: var(--goldColor);
+  font: 14px/19px 'Roboto';
+}
+
+.form-inline .form-control:-ms-input-placeholder {
+  color: var(--goldColor);
+  font: 14px/19px 'Roboto';
+}
+
+.form-inline .form-control::-ms-input-placeholder {
+  color: var(--goldColor);
+  font: 14px/19px 'Roboto';
+}
+
+.form-inline .form-control::placeholder {
+  color: var(--goldColor);
+  font: 14px/19px 'Roboto';
+}
+
+.form-inline .btn {
+  margin-left: -55px;
+  border: none;
+  padding: 10px 20px;
+  color: var(--goldColor);
+  width: unset;
+  background: unset !important;
+  height: unset;
+  display: unset;
+}
+
+.form-inline .btn svg {
+  font-size: 17px;
+}
+
+.form-inline .btn:hover svg {
+  color: var(--redColor);
+}
+
 .reviews {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,6 +254,11 @@ form .btn:hover {
   color: white;
   border-radius: 50%;
   font-size: 15px;
+}
+
+p {
+  color: var(--blackColor);
+  font: 20px/30px 'latoM';
 }
 
 .black-header {
